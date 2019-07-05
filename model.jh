@@ -1,0 +1,21 @@
+enum AnnouncementType{CODE_HUNT, QUIZ, CHECKIN, SELFIE, BILLUPLOAD, WRITE_REVIEW, FOLLOW_BUSINESS}
+
+entity Contest {
+	
+}
+
+entity Announcement{
+	title String,
+	description String,
+	active Boolean,
+	type AnnouncementType
+    rewardInfo String,
+	createdDate Instant,
+    contestId Long
+}
+
+relationship ManyToOne {
+	//Question
+	Announcement{contestId} to Contest{id}
+}
+paginate Announcement with pagination
