@@ -1,0 +1,14 @@
+{
+  "gameenginApplicationApp": {
+    "AnnouncementType": {
+      "null": "",
+      "CODE_HUNT": "CODE_HUNT",
+      "QUIZ": "QUIZ",
+      "CHECKIN": "CHECKIN",
+      "SELFIE": "SELFIE",
+      "BILLUPLOAD": "BILLUPLOAD",
+      "WRITE_REVIEW": "WRITE_REVIEW",
+      "FOLLOW_BUSINESS": "FOLLOW_BUSINESS"
+    }
+  }
+}
