@@ -1,0 +1,21 @@
+{
+    "name": "Contest",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "announcement",
+            "otherEntityRelationshipName": "contestId",
+            "relationshipName": "id"
+        }
+    ],
+    "changelogDate": "20190705130832",
+    "entityTableName": "contest",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

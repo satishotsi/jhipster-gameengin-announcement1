@@ -1,0 +1,52 @@
+{
+    "name": "Announcement",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "AnnouncementType",
+            "fieldValues": "CODE_HUNT,QUIZ,CHECKIN,SELFIE,BILLUPLOAD,WRITE_REVIEW,FOLLOW_BUSINESS"
+        },
+        {
+            "fieldName": "rewardInfo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "contestId",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "contest",
+            "otherEntityRelationshipName": "id",
+            "relationshipName": "contestId",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190705130833",
+    "entityTableName": "announcement",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
