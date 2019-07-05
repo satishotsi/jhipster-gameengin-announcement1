@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="announcement">
+            <h2><span jhiTranslate="gameenginApplicationApp.announcement.detail.title">Announcement</span> {{announcement.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.title">Title</span></dt>
+                <dd>
+                    <span>{{announcement.title}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.description">Description</span></dt>
+                <dd>
+                    <span>{{announcement.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.active">Active</span></dt>
+                <dd>
+                    <span>{{announcement.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.type">Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gameenginApplicationApp.AnnouncementType.' + announcement.type}}">{{announcement.type}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.rewardInfo">Reward Info</span></dt>
+                <dd>
+                    <span>{{announcement.rewardInfo}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.createdDate">Created Date</span></dt>
+                <dd>
+                    <span>{{announcement.createdDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.contestId">Contest Id</span></dt>
+                <dd>
+                    <span>{{announcement.contestId}}</span>
+                </dd>
+                <dt><span jhiTranslate="gameenginApplicationApp.announcement.contestId">Contest Id</span></dt>
+                <dd>
+                    <div *ngIf="announcement.contestId">
+                        <a [routerLink]="['/contest', announcement.contestId?.id, 'view']">{{announcement.contestId?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/announcement', announcement.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
