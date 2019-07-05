@@ -1,0 +1,29 @@
+{
+  "gameenginApplicationApp": {
+    "announcement": {
+      "home": {
+        "title": "Announcements",
+        "createLabel": "Create a new Announcement",
+        "createOrEditLabel": "Create or edit a Announcement",
+        "notFound": "No Announcement found"
+      },
+      "created": "A new Announcement is created with identifier {{ param }}",
+      "updated": "A Announcement is updated with identifier {{ param }}",
+      "deleted": "A Announcement is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Announcement {{ id }}?"
+      },
+      "detail": {
+        "title": "Announcement"
+      },
+      "title": "Title",
+      "description": "Description",
+      "active": "Active",
+      "type": "Type",
+      "rewardInfo": "Reward Info",
+      "createdDate": "Created Date",
+      "contestId": "Contest Id",
+      "contestId": "Contest Id"
+    }
+  }
+}

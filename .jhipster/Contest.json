@@ -1,0 +1,14 @@
+{
+    "name": "Contest",
+    "fields": [],
+    "relationships": [],
+    "changelogDate": "20190705124508",
+    "entityTableName": "contest",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
